@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh;
+    overflow: hidden; */
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: rgb(248, 226, 207);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: #FFFFFF;
+    /* padding: 40px 50px; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+.left{
+    background: url(ocean.JPG) ;
+    position: relative;
+
+}
+.right{
+    padding: 40px;
+}
+.right .head h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.right .head p{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 30px;
+}
+.right .head input.email{
+    display: block;
+    margin: 15px auto;
+    padding: 18px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid rgb(153, 210, 230);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.right .head input.email::placeholder{
+    font-size: 1.3em;
+}
+
+.right .head .creden{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.right .head a{
+    text-decoration: none;
+    color: rgb(102, 201, 234);
+    display: inline-block;
+    padding-top: 25px;
+    font-size: 20px;
+}
+.right .head button.next{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    background: rgb(102, 201, 234);
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right .bottom hr{
+    margin-bottom: 30px;
+}
+.right .bottom h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(45, 142, 174);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.right .bottom .button{
+    display: flex;
+    justify-content: space-around;
+}
+.right .bottom button.btn{
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 29px 5px;
+    font-size: 2em;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgb(102, 201, 234);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.right .bottom button img{
+    width: 24px;
+    margin-right: 10px;
+}
+.right .bottom button:hover{
+    background: rgb(102, 201, 234);
+    color: #FFFFFF;
+}
+.right .bottom p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.right .bottom a{
+    text-decoration: none;
+    color: rgb(45, 142, 174);
+
+}
+.left .class{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ddd;
+    color: #555;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 11px;
+}
+@media screen and (max-width: 960px){
+    body{
+        max-width: 400px;
+    }
+    .container{
+        grid-template-columns: 100%;
+    }
+    .right .head p{
+        font-size: 1em;
+        line-height: 20px;
+    }
+    .right .head input.email{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .right .head input.email::placeholder{
+        font-size: 0.9em;
+    }
+    .right .head a{
+        font-size: 1.1em;
+        padding-top: 15px;
+    }
+    .right .head button.next{
+        padding: 15px 20px;
+    }
+    .right .bottom .button{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .right .bottom button.btn{
+        margin-bottom: 20px;
+        padding: 5px 10px 5px;
+        font-size: 1.5em;
+    }
+    .right .bottom button img{
+        width: 20px;
+        margin-right: 10px;
+    }
+    .right .bottom p{
+        text-align: center;
+        font-size: 1em;
+    }
+    .left{
+        height: 30px;
+        background-size: cover;
+    }
+    .left .class{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+    body{
+        max-width: 350px;
+    }
+    .right .head p{
+        font-size: 0.85em;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .right .head input.email{
+        margin: 10px auto 2px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .right .head input.email::placeholder{
+        font-size: 0.8em;
+        text-align: center;
+    }
+    .right .head .creden{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 28px;
+    }
+    .right .head a{
+        font-size: 0.9em;
+        padding-top: 3px;
+        margin-bottom: 10px;
+    }
+    .right .head button.next{
+        padding: 8px 10px;
+    }
+    .right .bottom hr{
+        margin-bottom: 10px;
+    }
+    .right .bottom h3{
+        font-size: 1.2em;
+    }
+    .right .bottom button.btn{
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+    .right .bottom button img{
+        width: 18px;
+        margin-right: 10px;
+    }
+}
